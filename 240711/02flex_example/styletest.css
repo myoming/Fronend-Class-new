@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background: #eee;
+  header {
+    background: #0687ff;
+    display: flex;
+    /* flex-wrap: wrap; */
+    padding: 20px;
+    .logo {
+      flex: 1;
+      img {
+        filter: invert();
+      }
+    }
+    .gnb {
+      flex: 6;
+      ul {
+        display: flex;
+        justify-content: space-evenly;
+        color: #ffffff;
+      }
+    }
+    .icons {
+      flex: 1;
+      text-align: right;
+      color: white;
+    }
+  }
+}
+
+/* 반응형페이지를 위한 미디어쿼리 */
+@media screen and (max-width: 780px) {
+  body {
+    header {
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      gap: 30px;
+      .gnb {
+        ul {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 15px;
+        }
+      }
+      .icons {
+        color: black;
+      }
+    }
+  }
+  .trigger {
+    display: flex;
+    text-align: right;
+    justify-content: right;
+    color: white;
+  }
+
+  .trigger span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--bg-color-black);
+    position: absolute;
+  }
+
+  .trigger span.active {
+    background-color: white;
+  }
+
+  .trigger span:nth-child(1) {
+    top: 0;
+    left: 0;
+  }
+
+  .trigger span:nth-child(2) {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+
+  .trigger span:nth-child(3) {
+    bottom: 0;
+    left: 0;
+  }
+}

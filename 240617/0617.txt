@@ -1,0 +1,186 @@
+06.17(월)2일차
+
+-로컬 : 내 컴퓨터
+-원격 : 내 컴퓨터 바깥에 있는 데이터 공간
+
+
+-shift+A : 오토레이아웃
+ctrl+D: 복제 
+-ctrl+Alt+g : 그룹
+
+
+★버튼 만들기
+:텍스트 입력 > 오토레이아웃 만들기>
+
+
+★행간은 %퍼센트까지 꼭 입력 !!
+
+
+★작업이 끝난 페이지는 background 프레임선택 > 우측 하단 export > JPG로 내보내기(MD또는 기획자에게 전달하는용)
+
+★좌측상단 피그마 아이콘(메뉴)>File>Save local Copy>피그마 원본 파일이 아웃풋됨.
+☆피그마 원본 파일 열기 : 피그마 메인화면에서 Import.
+
+
+★웹사이트는 대체로 반응형 페이지로 제작을 하게 됨 
+웹 사이즈(=가로 사이즈)
+
+
+★Wrap 랩핑기능 (횡 바꾸기)
+:좌우 배열<->상하 배열로 바꾸는 기능
+
+
+
+★★★VS code 초기설정
+1.언어 설정 : 좌측메뉴 확장아이콘 클릭 > 플러그인 검색 : korean > 설치.
+
+2.각 프로그래밍 언어 아이콘 설정 : 확장 > 플러그인 검색 : material Icon Thema 설치. > 파일 아이콘 테마 설정 클릭. =>식별의 편리성을 위해서 하는 것.
+
+3.배경화면 컬러 테마 설정  : 확장 > 플러그인 검색 : One Dark Pro 설치
+
+4.라이브 서버 설정 : 확장 > 플러그인 검색 : Live Server.설치.(단축키alt + L + O) 
+>cmd(명령 프롬프트) 실행>ipconfig>IPv4주소에 적혀있는 주소를 복사
+
+5.들여쓰기 설정 : 확장 > 플러그인 검색: indent-rainbow 설치
+
+6.열린태그 닫힌태그 자동입력 설정 : 확장 > 플러그인 검색:Auto Rename Tag 설치.
+
+7.Color Picker설치
+
+8.오타/오류 표시해주는 기능 설정 : HTML CSS Support 설치
+
+9.HTML to CSS autocompletion 설치
+
+10.파이썬 관련(지금당장은안씀) : Code Runner 설치
+
+11.코드를 보기좋게 자동으로 해주는 기능 : prettier 설치 > 톱니아이콘 클릭 > 확장 설정 
+>■상단에 for 검색 > Editor : Default Formatter : Prettier - Code formatter로 바꾸기 >  스크롤 한참 내려서 Editor : format On Save항목에 체크.★
+>■상단에 Tab Size 검색 > Editor: Tab Size 2로변경.
+>■상단에 wrap검색 > Editor:Word Wrap > on으로 변경.
+>■상단에 zoom검색 >Mouse Wheel Zoom>마우스 휠 사용 확대축소 체크하여 활성화
+>■상단에 Auto검색 > Files:Auto save delay : 500으로 변경(0.5초)
+>■상단에 Live검색 >Live Server Settings : Full Reload 체크하여 활성화
+>■상단에 Emmet검색 >Emmet:Variables>항목 추가 >항목 :lang >값:ko.
+
+
+
+
+
+
+
+
+★html을 활용해서 coding을 시작할 때,
+1)가장 디테일한 부분부터 코딩 작업하는 경우
+2)가장 상위요소부터 코딩 작업하는 경우
+
+
+★ul태그 : 리스트
+ul>(li>a{쿠킹클래스})*3
+
+★Alt+커서 클릭하면
+여러줄에 한번에 타이핑이 가능함!!★★★
+
+
+★스타일 리셋 코드
+<style>
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+    </style>
+
+★스타일 여백 리셋 코드
+* {
+  margin: 0; (m:0이라고 입력하면 자동완성됨)
+  padding: 0; (p:0)
+  box-sizing: border-box; (bz:0)
+}
+
+
+★html에 css연결하기
+<link rel="stylesheet" href="./style.css" />
+
+
+
+
+★cdn(contents delivery network) 
+
+
+
+★폰트
+1)TTF(True Type Font) : 
+-애플+마이크로소프트의 합작, 
+-범용적인 문서 및 디자인 작업,
+-용량이 작아야 함
+-2차 베지어 곡선
+-윈도우 유저가 많이 사용함.
+
+2)OTF(Open Type Font) : 
+-어도비 + 마이크로소프트의 합작, 
+-고화질/고출력 디자인 작업.
+-용량이 큼
+-3차 베지어 곡선
+-맥 유저가 많이 사용함
+
+
+
+★CSS주석
+/*주석*/ = 단축키 Ctrl+/
+
+
+★html주석
+<!--주석-->
+
+★복제
+Alt+Shift+↓
+
+
+
+---------------------
+★컴퓨터 운영체제
+1.연산작업 처리 : 2가지 =>0,1
+0:false / 1:true => 컴퓨터는 2진수로 동작함.
+비트(Bit): 컴퓨터가 데이터를 처리하는 최소 단위.
+바이트(Bite):8개의 비트, 유의미한 데이터를 보관, 처리하는 단위. (1바이트는 2의8승=256 즉, 0부터~255까지)
+
+
+★컬러 구현 및 출력 : RGB
+
+
+R255, G255, B255=>white
+R0, G0, B0, =>black
+
+
+인간 : 10진법 =>10진수(1~10)
+컴퓨터 : 16진수
+
+0 1 2 3 4 5 6 7 8 9 a b c d e f
+
+fff =>white
+f00 = ff0000 =>Red
+00f = 0000ff =>Blue
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

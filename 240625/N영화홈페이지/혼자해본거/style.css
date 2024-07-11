@@ -1,0 +1,38 @@
+:root {
+  --bg-color-white: #fff;
+  --bg-color-black: #000;
+  --main-width: 1190px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: "NEXON Lv1 Gothic";
+  letter-spacing: -2px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+#logo {
+  font-family: "NEXON Lv1 Gothic";
+  font-size: 30px;
+}
+
+.gnbDesktop {
+  display: flex;
+  gap: 40px;
+  color: #c9c9c9;
+}

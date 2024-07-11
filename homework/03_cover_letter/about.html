@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>about</title>
+
+    <!-- FONTAWESOME -->
+    <script
+      src="https://kit.fontawesome.com/28dca57fe4.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- CSS & JS -->
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+  </head>
+
+  <body class="bg_black">
+    <div id="wrap">
+      <header id="header">
+        <h1 id="logo">
+          <a href="./index.html"><img src="./img/logo.png" alt="myoming" /></a>
+        </h1>
+        <div id="mobile_memu_btn">
+          <img src="./img/mobile_menu_btn.png" alt="menu" />
+        </div>
+        <nav id="gnb">
+          <div id="nav_close_btn">
+            <img src="./img/nav_close_btn.png" alt="close" />
+          </div>
+          <ul>
+            <li class="on"><a href="./about.html">About</a></li>
+            <li><a href="./favorite.html">Favorite</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div id="container">
+        <div id="top_nav">
+          <a href="./index.html">Home</a><span>></span
+          ><a href="./about.html">About</a>
+        </div>
+        <div id="menu_title">
+          <div>
+            <h2>
+              ( <img src="./img/main_bg_flower.png" alt="flower" /> About )
+            </h2>
+          </div>
+        </div>
+        <section id="about">
+          <div class="item_wrap">
+            <div id="img_wrap" class="items">
+              <div class="img">
+                <img class="star" src="./img/about_star.png" alt="star" />
+              </div>
+              <div class="img">
+                <img
+                  class="myoming"
+                  src="./img/about_myoming.png"
+                  alt="myoming"
+                />
+              </div>
+            </div>
+            <div id="text" class="items">
+              <div id="slide_wrap">
+                <div class="slider">
+                  <p class="p1">효 인</p>
+                  <p class="p2">그래픽 디자이너</p>
+                  <p class="p3">브랜딩 / 광고 / 편집 / 캐릭터</p>
+                  <p class="p4">시각디자인학 전공</p>
+                  <p class="p5">Skill</p>
+                  <i><img src="./img/skill_icons.png" alt="skill" /></i>
+                </div>
+                <div class="slider">
+                  <article>
+                    <h3>Interest</h3>
+                    <h4>굿즈 제작</h4>
+                    <p class="p6">키링 / 엽서 / 스티커</p>
+                    <h4>생성형 Ai와 친해지는 중</h4>
+                    <p class="p7">midjourney / chatGPT / playground</p>
+                  </article>
+                  <article>
+                    <h3>MBTI</h3>
+                    <h4>INTP</h4>
+                    <p class="p8">
+                      유료 검사 결과는 INTJ로 <br />나왔으나 받아들이지 않음
+                    </p>
+                    <p class="p10">
+                      “그럴 수도 있지” <span>"왜?"</span> <br />“토론 좋아요”
+                      <span class="p11">반대 의견 환영 해요</span>
+                    </p>
+                  </article>
+                </div>
+              </div>
+              <div id="slide_btn">
+                <i
+                  class="active"
+                  onclick="slideFunc(this, 1, '#slide_wrap')"
+                ></i>
+                <i onclick="slideFunc(this, 2, '#slide_wrap')"></i>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div class="cursor"></div>
+  </body>
+</html>

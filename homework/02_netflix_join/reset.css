@@ -1,0 +1,18 @@
+/* reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*컨텐츠에 적용한 width, height의 값을 포함한 전체 사이즈*/
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit; /*부모 요소로부터 해당 속성의 계산값을 받아 사용*/
+}

@@ -1,0 +1,234 @@
+@import url("./reset.css");
+
+body {
+  height: 100%;
+  background: url(./img/bg.jpg) center/cover no-repeat;
+}
+
+/* wrapper */
+#wrapper {
+  position: relative;
+}
+
+#header {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* login */
+#login {
+  height: 42px;
+}
+
+/* 특정 속성을 지닌 태그를 지정해주는 속성선택자 */
+#login input[type="submit"] {
+  font-size: 16px;
+  padding: 8px 32px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  color: #fff;
+  background-color: red;
+  transition: all 0.3s;
+  &:hover {
+    border: 1px solid red;
+    color: red;
+    background-color: #fff;
+    cursor: pointer;
+  }
+}
+
+/* logo */
+#logo {
+  width: 160px;
+  height: 42px;
+  background: url("./img/netflix_logo.png") center/cover no-repeat;
+}
+
+/* logon */
+#logon {
+  width: 463px;
+  height: 650px;
+  background: radial-gradient(rgba(39, 35, 36, 0.7), rgba(35, 37, 39, 0.9));
+  margin: 40px auto 50px;
+  padding: 20px;
+}
+.inner_contents {
+  color: #fff;
+  font-size: 14px;
+}
+
+.title {
+  width: 423px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+#calendar {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0 30px 0;
+}
+
+select {
+  width: 141px;
+  height: 40px;
+  font-size: 16px;
+  background: #000;
+  color: #bdbebe;
+  padding-left: 10px;
+  &:first-child {
+    border-radius: 8px 0 0 8px;
+  }
+  &:last-child {
+    border-radius: 0 8px 8px 0;
+  }
+}
+
+.username #user {
+  width: 100%;
+  height: 40px;
+  margin: 10px 0px 30px;
+  padding-left: 12px;
+  border: 1px solid #707070;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #000;
+  color: #fff;
+  &:focus {
+    outline: none;
+  }
+}
+
+.userpassword #password {
+  width: 100%;
+  height: 40px;
+  margin: 10px 0px 30px;
+  padding-left: 12px;
+  border: 1px solid #707070;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #000;
+  color: #fff;
+  &:focus {
+    outline: none;
+  }
+}
+
+#gender_btn {
+  margin: 10px 0px 30px;
+  display: flex;
+  button {
+    width: 100%;
+    height: 50px;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #707070;
+    cursor: pointer;
+    &:first-child {
+      border-radius: 8px 0px 0px 8px;
+      border-right: transparent;
+    }
+    &:last-child {
+      border-radius: 0px 8px 8px 0px;
+    }
+    i {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      font-size: 24px;
+      padding: 10px;
+      border: 2px solid transparent;
+      border-radius: 100px;
+      &.filledA {
+        border: 2px solid #dc143c;
+        background-color: #dc143c;
+        color: #fff;
+      }
+      &.filledB {
+        border: 2px solid #007bff;
+        background-color: #007bff;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.check {
+  margin: 25px 0;
+  input[type="checkbox"] {
+    scale: 2;
+    margin: 10px;
+    cursor: pointer;
+  }
+}
+
+.btn input[type="submit"] {
+  width: 100%;
+  height: 40px;
+  background: red;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+  &:hover {
+    border: 1px solid red;
+    background-color: white;
+    color: red;
+  }
+}
+
+/* footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h3 {
+    color: white;
+  }
+  #items {
+    display: flex;
+    gap: 10px;
+    margin-top: 40px;
+    .inner_item {
+      background-color: #000;
+      color: white;
+      display: flex;
+      width: 200px;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      border: 1px solid;
+      border-radius: 8px;
+      padding: 10px;
+      box-sizing: content-box;
+      &:hover {
+        cursor: pointer;
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+        transition: 0.3s all;
+      }
+      i {
+        font-size: 38px;
+      }
+      .inner_item_title {
+        font-size: 12px;
+      }
+      .inner_item_body {
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+label {
+  cursor: pointer;
+}

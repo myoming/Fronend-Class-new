@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        counter-increment: rint;
+      }
+      p::before {
+        content: counter(rint) ".";
+      }
+      p::after {
+        content: " - " attr(data-page) " page";
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Lorem Ipsum</h1>
+    <p data-page="52">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo quo ad
+      corrupti et quia vero architecto laborum excepturi est! Sit aliquam quasi
+      tenetur in ipsum maxime tempora sequi aperiam voluptate. Voluptatum
+      provident illum hic omnis nesciunt, ipsam nihil sit et cupiditate expedita
+      iure sed quod totam, harum dicta at. Sequi amet cupiditate corporis
+      molestias deserunt aspernatur ducimus exercitationem pariatur aut.
+    </p>
+    <p data-page="273">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, fugiat
+      ipsa ducimus nisi quasi praesentium mollitia corrupti esse quod eius
+      veritatis? Excepturi eligendi soluta eius mollitia ut dolores minima quas.
+      Necessitatibus nam magnam fuga, incidunt neque eius amet voluptas itaque
+      pariatur iure facere? Exercitationem a ut accusamus, reprehenderit
+      distinctio repellendus voluptatum molestias provident dignissimos
+      voluptas, pariatur tenetur delectus, deleniti cumque? Inventore obcaecati
+      assumenda soluta, in, culpa facilis quaerat non commodi tenetur dicta
+      recusandae, amet laudantium esse? Perspiciatis, vero incidunt iste
+      consectetur modi perferendis. Doloremque omnis tempore cum exercitationem.
+      Officiis, perspiciatis. Quae quia error enim, vitae eligendi dolor
+      deleniti recusandae ea illo eveniet repellat maiores odit accusamus et?
+      Nemo, pariatur et adipisci quisquam similique maxime, dolorem quibusdam
+      quam autem enim soluta?
+    </p>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background: orange;
+        /* 벤더 프리픽스 */
+        /* MS => m/s */
+        /* 크로스 브라우징 */
+        /* -ms-transition-duration: 0.3s;
+        -moz-transition-duration: 0.3s;
+        -webkit-transition-duration: width 0.3s, height 0.3s; all 0.3s로 써도 같음 */
+        /* transition-duration: 0.3s;
+        transition-property: width, height;
+        transition-delay: 0.3s;
+        transition-timing-function: cubic-bezier(0.53, 1.54, 0.97, 0.23); */
+
+        transition: background 0.8s ease, height 0.5s ease-out 0.3s;
+        &:hover {
+          width: 200px;
+          height: 300px;
+        }
+        &:active {
+          background-color: crimson;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">box</div>
+  </body>
+</html>

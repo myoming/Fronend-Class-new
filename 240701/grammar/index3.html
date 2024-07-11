@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    header > h1 {
+      color: #f00;
+    }
+
+    input[type='text'] {
+      background-color: rgb(248, 30, 150);
+    }
+
+    input[type='password'] {
+      background-color: rgb(15, 216, 243);
+    }
+
+    #same-position > h1 + h2 {
+      color: rgb(168, 243, 187);
+    }
+
+    #same-position > h1 ~ h2 {
+      background-color: rgb(248, 143, 82);
+    }
+
+    .btn:hover {
+      color: #f00;
+    }
+
+    .btn:active {
+      color: #00f;
+    }
+  </style>
+  <body>
+    <header id="header">
+      <h1 class="title">Lorem Ipsum</h1>
+      <div id="nav">
+        <h1>navigation</h1>
+      </div>
+    </header>
+    <form action="/" method="get">
+      <input type="text" />
+      <input type="password" />
+    </form>
+    <div id="same-position">
+      <h1>Header - 1</h1>
+      <h2>Header - 2</h2>
+      <h2>Header - 2</h2>
+      <h2>Header - 2</h2>
+      <h2>Header - 2</h2>
+    </div>
+    <h1 class="btn">User Action EVENT</h1>
+  </body>
+</html>

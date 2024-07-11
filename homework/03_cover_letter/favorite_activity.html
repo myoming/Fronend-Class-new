@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contact</title>
+
+    <!-- FONTAWESOME -->
+    <script
+      src="https://kit.fontawesome.com/28dca57fe4.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- CSS & JS -->
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <header id="header">
+        <h1 id="logo">
+          <a href="./index.html"><img src="./img/logo.png" alt="myoming" /></a>
+        </h1>
+        <div id="mobile_memu_btn">
+          <img src="./img/mobile_menu_btn.png" alt="menu" />
+        </div>
+        <nav id="gnb">
+          <div id="nav_close_btn">
+            <img src="./img/nav_close_btn.png" alt="close" />
+          </div>
+          <ul>
+            <li><a href="./about.html">About</a></li>
+            <li class="on"><a href="./favorite.html">Favorite</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div id="container">
+        <div id="top_nav">
+          <a href="./index.html">Home</a><span>></span
+          ><a href="./favorite.html">Favorite</a>
+        </div>
+        <div id="menu_title">
+          <div>
+            <h2>
+              ( <img src="./img/main_bg_flower.png" alt="flower" /> activity )
+            </h2>
+          </div>
+        </div>
+        <section id="favorite">
+          <div id="fav_slider_wrap">
+            <div class="btn left" onclick="favSlide(this, 'left')">
+              <img src="./img/slider_btn_left.png" alt="left" />
+            </div>
+            <div class="btn right" onclick="favSlide(this, 'right')">
+              <img src="./img/slider_btn_right.png" alt="right" />
+            </div>
+            <div class="inner">
+              <div class="slider">
+                <img src="./img/interest_game.jpg" alt="game" />
+                <div class="desc">
+                  <span>01</span>
+                  <p>온라인 게임보단 보드게임을 좋아해요</p>
+                </div>
+              </div>
+              <div class="slider">
+                <img src="./img/interest_musuem.jpg" alt="musuem" />
+                <div class="desc">
+                  <span>02</span>
+                  <p>
+                    전시회 관람 좋아요, 사진 속 오르세 박물관은 정말 또 한번
+                    가고싶은 곳!
+                  </p>
+                </div>
+              </div>
+              <div class="slider">
+                <img src="./img/interest_baking.jpg" alt="baking" />
+                <div class="desc">
+                  <span>03</span>
+                  <p>
+                    집에서 케익이나 쿠키같은 디저트를 보다 건강한 재료로 만들곤
+                    해요
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div class="cursor"></div>
+  </body>
+</html>

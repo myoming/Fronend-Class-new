@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .header {
+        display: flex;
+        width: 100vw;
+        height: 150px;
+        background: pink;
+      }
+
+      .brothers {
+        display: flex;
+        height: 50px;
+        background: rgb(202, 184, 187);
+        &:nth-child(1) {
+          flex-basis: 100px;
+          flex-grow: 1;
+          flex-shrink: 3;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">Header</div>
+    <div class="brothers">
+      <div>Nav</div>
+      <div>Article</div>
+      <div>Aside</div>
+    </div>
+  </body>
+</html>
