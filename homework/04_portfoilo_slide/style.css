@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+input[type="radio"] {
+  display: none;
+  &#tab1:checked ~ .tab_btn label[for="tab1"] {
+    color: crimson;
+  }
+  &#tab2:checked ~ .tab_btn label[for="tab2"] {
+    color: crimson;
+  }
+  &#tab3:checked ~ .tab_btn label[for="tab3"] {
+    color: crimson;
+  }
+  &#tab1:checked ~ .item .slide:nth-child(1) h2 {
+    transform: translateY(300px);
+    opacity: 1;
+  }
+  &#tab2:checked ~ .item .slide:nth-child(2) h2 {
+    transform: translateY(300px);
+    opacity: 1;
+  }
+  &#tab3:checked ~ .item .slide:nth-child(3) h2 {
+    transform: translateY(300px);
+    opacity: 1;
+  }
+}
+/* ~ : 체크되어있다면 탐색해(?)보고 item이 있으면 margin 값을 이렇게 적용하겠다 */
+input:nth-child(1):checked ~ .item {
+  margin-left: 0;
+}
+
+input:nth-child(2):checked ~ .item {
+  margin-left: -100%;
+}
+
+input:nth-child(3):checked ~ .item {
+  margin-left: -200%;
+}
+
+.tab_slider {
+  height: 100vh;
+  overflow: hidden;
+  .item {
+    display: flex;
+    width: 300%;
+    height: 100vh;
+    background-color: aqua;
+    transition: 0.3s;
+    .slide {
+      width: calc(100% / 3); /* 33.333333..*/
+      height: 100vh;
+      /* 한번에 쓰기전에 각 속성명을 잘 기억하자 */
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      overflow: hidden;
+      /* 대신 위 처럼 쓸 경우 아래에 백그라운드-이미지를 꼭 넣어야함 */
+      &:nth-child(1) {
+        background-image: url(./img/img_01.png);
+      }
+      &:nth-child(2) {
+        background-image: url(./img/img_02.png);
+      }
+      &:nth-child(3) {
+        background-image: url(./img/img_03.png);
+      }
+      &:nth-child(1)::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(120deg, rgb(61, 79, 218, 0.3), transparent);
+      }
+      &:nth-child(2)::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          120deg,
+          rgba(172, 242, 81, 0.3),
+          transparent
+        );
+      }
+      &:nth-child(3)::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          120deg,
+          rgba(168, 98, 174, 0.5),
+          transparent
+        );
+      }
+
+      h2 {
+        /* h2태그는 블럭태그라 포지션값을 스태틱으로 하면 꼼짝하지 않음. */
+        position: relative;
+        transform: translateY(-200px);
+        color: white;
+        transition: 0.3s 0.5s;
+        font-size: 80px;
+        text-align: center;
+      }
+    }
+  }
+  .tab_btn {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 120px;
+    background-color: rgba(0, 0, 0, 0.3);
+    label {
+      line-height: 50px;
+      height: 50px;
+      color: white;
+      cursor: pointer;
+    }
+  }
+}
