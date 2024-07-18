@@ -608,113 +608,113 @@ footer {
       }
     }
   }
-}
 
-/* INTRO */
-.intro {
-  .heading {
-    h1 {
-      font-size: 40px;
-    }
-    p {
-      padding: 0;
-    }
-  }
-}
-
-/* ABOUT */
-.about_content {
-  flex-direction: column;
-}
-
-/* RANKING */
-.ranking {
-  .ranking_content {
-    padding: 50px 0;
-    .items {
-      flex-direction: column;
-      .item {
-        width: 100%;
-        border-radius: 7px;
-        margin-bottom: 25px;
-        .up-image {
-          width: 100%;
-        }
-      }
-    }
-  }
-}
-
-/* TESTIMONIAL */
-.testimonial {
-  padding: 50px 0;
-  .testimonial_content {
-    h2 {
-      font-size: 24px;
-    }
-  }
-}
-
-/* CALLACTION */
-.callaction {
-  .callaction_heading {
-    h2 {
-      font-size: 26px;
-    }
-  }
-}
-
-/* BLOG */
-.blog {
-  .blog_content {
-    .blog_header {
-      text-align: center;
-      h2 {
-        font-size: 36px;
+  /* INTRO */
+  .intro {
+    .heading {
+      h1 {
+        font-size: 40px;
       }
       p {
-        font-size: 20px;
-      }
-      h3 {
-        margin-top: 15px;
+        padding: 0;
       }
     }
-    .post_content {
-      flex-direction: column;
-      .recent_post_items,
-      .shared_post_items {
-        .post_item {
-          flex-direction: column;
-          .post_image {
+  }
+
+  /* ABOUT */
+  .about_content {
+    flex-direction: column;
+  }
+
+  /* RANKING */
+  .ranking {
+    .ranking_content {
+      padding: 50px 0;
+      .items {
+        flex-direction: column;
+        .item {
+          width: 100%;
+          border-radius: 7px;
+          margin-bottom: 25px;
+          .up-image {
             width: 100%;
-            border-radius: 7px;
           }
         }
       }
     }
   }
-}
 
-/* FESTIVAL */
-.festival {
-  padding: 15px;
-  .festival_heading {
-    h3 {
-      font-size: 24px;
-    }
-    .btns {
-      a {
-        width: 100%;
-        margin-bottom: 10px;
+  /* TESTIMONIAL */
+  .testimonial {
+    padding: 50px 0;
+    .testimonial_content {
+      h2 {
+        font-size: 24px;
       }
     }
   }
-}
 
-/* FOOTER */
-footer {
-  .footer_content {
-    flex-direction: column;
-    gap: 25px;
+  /* CALLACTION */
+  .callaction {
+    .callaction_heading {
+      h2 {
+        font-size: 26px;
+      }
+    }
+  }
+
+  /* BLOG */
+  .blog {
+    .blog_content {
+      .blog_header {
+        text-align: center;
+        h2 {
+          font-size: 36px;
+        }
+        p {
+          font-size: 20px;
+        }
+        h3 {
+          margin-top: 15px;
+        }
+      }
+      .post_content {
+        flex-direction: column;
+        .recent_post_items,
+        .shared_post_items {
+          .post_item {
+            flex-direction: column;
+            .post_image {
+              width: 100%;
+              border-radius: 7px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* FESTIVAL */
+  .festival {
+    padding: 15px;
+    .festival_heading {
+      h3 {
+        font-size: 24px;
+      }
+      .btns {
+        a {
+          width: 100%;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  /* FOOTER */
+  footer {
+    .footer_content {
+      flex-direction: column;
+      gap: 25px;
+    }
   }
 }

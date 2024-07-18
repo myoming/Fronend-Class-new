@@ -1,0 +1,25 @@
+/*variables*/
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*content*/
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+body .btns button.complete {
+  width: 150px;
+  padding: 7px;
+  background: #fff;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: royalblue;
+  border: 3px solid royalblue;
+}
