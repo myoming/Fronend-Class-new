@@ -1,0 +1,28 @@
+$color: (
+  bg-color: #222,
+  item-color-on: #51adf8,
+  item-color-off: #fff,
+);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: map-get($color, bg-color);
+}
+.buttons {
+  .btn1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    border: 3px solid #7e7e7e;
+    border-radius: 20%;
+    font-size: 50px;
+    color: map-get($color, item-color-off);
+  }
+}
