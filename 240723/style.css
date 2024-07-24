@@ -21,7 +21,7 @@ a {
 /* Mix-in */
 /* common */
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat";
   color: #222;
   background: #fff;
 }
@@ -42,6 +42,39 @@ body .cd-section > div .content {
   overflow: hidden;
 }
 
+/* About */
+.about-inner {
+  background: #1db1f0 url("./images/line-drawing.png") right bottom no-repeat;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.about-inner .about-items {
+  width: 45%;
+  margin-left: 150px;
+}
+.about-inner .about-items .item {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+.about-inner .about-items .item img {
+  height: 100px;
+  filter: invert(1);
+  transition: all 0.5s;
+}
+.about-inner .about-items .item:hover img {
+  filter: invert(0);
+}
+.about-inner .about-items .item span h3 {
+  font-size: 28px;
+}
+.about-inner .about-items .item span p {
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+/* Plan */
 .plan-inner {
   background: #222;
   height: 100%;
@@ -67,7 +100,7 @@ body .cd-section > div .content {
   color: #fff;
 }
 .plan-inner .plan-feature > div.plan-info .plan-heading .bar {
-  background: rgb(64, 201, 255);
+  background: #1db1f0;
   width: 100px;
   height: 4px;
   border: none;
@@ -75,35 +108,42 @@ body .cd-section > div .content {
   margin: 20px 0;
 }
 .plan-inner .plan-feature > div.plan-info .plan-heading p {
-  font: normal 16px/2.4rem "Montserrat", sans-serif;
+  font: normal 16px/2.4rem "Montserrat";
 }
 .plan-inner .plan-feature > div.plan-info .plan-photo {
   flex: 1;
 }
 .plan-inner .plan-feature > div.plan-info .plan-photo img {
-  width: 100%;
   height: 265px;
 }
 .plan-inner .plan-feature > div.history-info h2 {
   color: #fff;
 }
-.plan-inner .plan-feature > div.history-info h2 .bar {
-  background: rgb(64, 201, 255);
+.plan-inner .plan-feature > div.history-info .bar {
+  background: #1db1f0;
   width: 100px;
   height: 4px;
   border: none;
   display: inline-block;
   margin: 20px 0;
 }
-.plan-inner .plan-feature > div.history-info h2 .history-slider div h4 {
+.plan-inner .plan-feature > div.history-info .history-slider div h4 {
   color: #fff;
-  font: normal 20px/1.5rem "Montserrat";
+  font: normal 20px/2.4rem "Montserrat";
 }
-.plan-inner .plan-feature > div.history-info h2 .history-slider div h4 span {
-  color: rgb(64, 201, 255);
+.plan-inner .plan-feature > div.history-info .history-slider div h4 span {
+  color: #1db1f0;
 }
-.plan-inner .plan-feature > div.history-info h2 .history-slider div p {
-  font: normal 16px/2.4rem;
+.plan-inner .plan-feature > div.history-info .history-slider div p {
+  font: normal 16px/2.4rem "Montserrat";
+}
+.plan-inner .plan-feature > div.history-info .history-slider .slick-arrow {
+  display: none !important;
+}
+.plan-inner .plan-feature > div.history-info .history-slider .slick-dots li button::before {
+  font-size: 40px;
+  color: #fff;
+  top: 20px;
 }
 
 /* Awards */
@@ -132,7 +172,7 @@ body .cd-section > div .content {
 .awards-inner > div.about-awards .about-heading .bar {
   width: 50px;
   height: 4px;
-  background: crimson;
+  background: #dc143c;
   border: none;
   margin: 30px auto;
 }
@@ -165,7 +205,7 @@ body .cd-section > div .content {
 
 /* Location */
 .location-inner {
-  background: url("./img/background-location.jpg") center/cover no-repeat;
+  background: url("./images/background-location.jpg") center/cover no-repeat;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -204,7 +244,7 @@ body .cd-section > div .content {
   margin-top: 5px;
 }
 .location-inner .feature .office p {
-  font: normal 16px/2.4rem "Montserrat", sans-serif;
+  font: normal 16px/2.4rem "Montserrat";
   margin: 10px 0;
 }
 .location-inner .feature .office span {
@@ -223,11 +263,10 @@ body .cd-section > div .content {
 .location-inner .feature .service .service-item h3 {
   color: #fff;
   font-size: 22px;
-  margin: 10px;
+  margin: 10px 0;
 }
 .location-inner .feature .service .service-item p {
   font: normal 16px/2.4rem "Montserrat", sans-serif;
-  margin: 10px 0;
 }
 
 /* Contact */
@@ -242,7 +281,7 @@ body .cd-section > div .content {
 .contact-inner .contact-feature {
   width: 70%;
   display: flex;
-  gap: 20px;
+  gap: 30px;
 }
 .contact-inner .contact-feature > div {
   flex: 1;
@@ -264,7 +303,7 @@ body .cd-section > div .content {
   font: bold 16px/1rem "Montserrat", sans-serif;
 }
 .contact-inner .contact-feature > div.contact-form .send-box label span {
-  color: crimson;
+  color: #dc143c;
   font-weight: normal;
 }
 .contact-inner .contact-feature > div.contact-form .send-box input[type=email],
@@ -310,6 +349,6 @@ body .cd-section > div .content {
   margin-right: 6px;
 }
 .contact-inner .contact-feature > div.contact-info p {
-  margin: 20px;
+  margin-top: 20px;
   line-height: 2.4rem;
 }
