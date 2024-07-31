@@ -8,18 +8,25 @@
 
 const number = Number(prompt("숫자를 입력하세요"));
 
+let isprime;
+isprime = true;
 if (number === 1) {
-  document.write(`1은 소수도 합성수도 아닙니다!`);
+  document.write(`1은 소수도 합성수도 아닙니다.`);
 } else if (number === 2) {
-  document.write(`2는 소수입니다!`);
+  document.write(`2는 소수입니다`);
 } else {
   for (let i = 2; i < number; i++) {
     if (number % i === 0) {
-      document.write(`${number}는 소수가 아닙니다!`);
+      isprime = true;
       break;
     } else {
-      document.write(`${number}는 소수 입니다!`);
+      isprime = false;
       break;
     }
+  }
+  if (isprime) {
+    document.write(`${number}는 소수입니다.`);
+  } else {
+    document.write(`${number}는 소수가 아닙니다.`);
   }
 }
