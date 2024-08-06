@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="./script5.js"></script>
+    <title>Document</title>
+    <style>
+      ul,
+      li {
+        list-style: none;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-style: 22px;
+        & > button {
+          display: block;
+          &.btnActive {
+            display: none;
+          }
+        }
+        #modal-box {
+          display: none;
+          #profile {
+            display: flex;
+            align-items: center;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px 40px;
+            position: relative;
+            button {
+              position: absolute;
+              top: 20px;
+              right: 20px;
+            }
+            img {
+              width: 300px;
+            }
+            #desc > ul {
+              display: flex;
+              flex-direction: column;
+              gap: 10px;
+              justify-content: space-between;
+              height: 160px;
+            }
+            &.active {
+              display: flex;
+            }
+          }
+          &.active {
+            display: block;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 모달창이 나오기 전 UI -->
+    <button id="open">프로필 보기</button>
+    <!-- 모달창이 나온 후 UI -->
+    <div id="modal-box">
+      <div id="profile">
+        <button>닫기</button>
+        <img
+          src="https://images.khan.co.kr/article/2024/07/31/news-p.v1.20240731.6d3697e5a38d4b54827c47fe365a0752_P1.png"
+          alt="yeji"
+        />
+        <div id="desc">
+          <ul>
+            <li><a href="#">이름 : 김예지</a></li>
+            <li><a href="#">직업 : 사격선수</a></li>
+            <li><a href="#">취미 : 간지</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
